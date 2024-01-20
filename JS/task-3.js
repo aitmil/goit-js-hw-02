@@ -1,17 +1,10 @@
 function checkForSpam(message) {
   const checkWord1 = 'spam';
   const checkWord2 = 'sale';
-  //   const lowerSpam = checkWord1.toLowerCase();
-  //   const lowerSale = checkWord2.toLowerCase();
-  //   if (message.indexOf(lowerSpam) && message.indexOf(lowerSale)) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  //   return (
-  //     message.includes(checkWord1.toLowerCase()) ||
-  //     message.includes(checkWord2.toLowerCase())
-  //   );
+  return (
+    message.toLowerCase().includes(checkWord1) ||
+    message.toLowerCase().includes(checkWord2)
+  );
 }
 
 console.log(checkForSpam('Latest technology news')); // false
